@@ -1,30 +1,22 @@
 package serg;
+import serg.MyFirstPackage.*;
+import java.lang.Math;
 
 class MyFirstClass {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+    	MySecondClass MyCl = new MySecondClass(1, 1);
+        int i, j;
+        for (i = 1; i <= 8; i++) {
+            for(j = 1; j <= 8; j++) {
+                MyCl.setFieldX(2);
+                MyCl.setFieldY(3);
+                System.out.print(MyCl.getMin());
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 
 }
-class MySecondClass {
-    int field_x = 0;
-    int field_y = 0;
-    
-    MySecondClass(int field_x, int field_y) {
-    	
-    }
-    private int getFieldX() {
-        return field_x;
-    }
-    private int getFieldY() {
-    	return field_y;
-    }
-    private void setFieldX(int field_x){
-    	this.field_x = field_x;
-    }
-    private void setFieldY(int field_y){
-    	this.field_y = field_y;
-    }
-}
+
