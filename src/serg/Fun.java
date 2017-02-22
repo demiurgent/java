@@ -1,5 +1,5 @@
 package serg;
 
-public class Fun {
+public class Funnn {
 
 }
